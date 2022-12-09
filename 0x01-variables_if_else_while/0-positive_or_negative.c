@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: Assign random number to variable n
- * Return - Always 0 (Success)
+ * main - Assign random number to int n everytime
+ * it executes, and prints it
+ * Return: - Always 0 (Success)
  */
 int main(void)
 {
