@@ -2,7 +2,7 @@
 
 /**
  * _islower - Check main
- * c - is a character for function
+ * c - is a character argument
  *
  * Description: checks for lowercase characters
  * Return: 1 if is lowercase or 0 if is uppercase
