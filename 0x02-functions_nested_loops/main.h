@@ -1,5 +1,6 @@
 #ifndef main_h
 #define main_h
+#define UNUSED(c) UNUSED_ ## c__attribute__((__unused__))
 
 int _putchar(char c);
 void print_alphabet(void);
