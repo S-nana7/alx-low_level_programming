@@ -2,7 +2,7 @@
 
 /**
  * _islower - Check main
- * c - is a character argument
+ * c - contains value to be compared
  *
  * Description: checks for lowercase characters
  * Return: 1 if is lowercase or 0 if is uppercase
@@ -10,14 +10,13 @@
 
 int _islower(int c)
 {
-	if
-		(c >= 'a' && c <= 'z');
-	{
-		return (1);
-	}
+	char i;
+	int lower = 0;
 
-	else
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		return (0);
+		if (i == c)
+			lower = 1;
 	}
+	return (lower);
 }
