@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - It returns the value of square root of n
- * @n: an input integer
- * Return: The square root of n
+ * _pow_recursion - It returns the value of x raised to the power y
+ * @x: the base
+ * @y: the exponent
+ * Return: The result of x raised y
  */
 
-int _sqrt_recursion(int n)
+int _pow_recursion(int x, int y)
 {
-	if (n < 0)
+	if (y == 0)
+		return (1);
+	else if (y < 0)
 		return (-1);
+	else if (y == 1)
+		return (x);
 
-	return (_sqrt(1, n));
+	return (x *= _pow_recursion(x, y - 1));
 }
